@@ -1,2 +1,3 @@
 #!/usr/bin/env node
-console.log('Welcome to the Brain Games!')
+console.log(nameCheck('Hello, '))
+import nameCheck from '../../frontend-project-44/src/cli.js'
