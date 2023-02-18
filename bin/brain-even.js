@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import readlineSync from 'readline-sync';
 import getRandomInt from '../../frontend-project-44/src/random.js'
 var random = getRandomInt(0,100)
