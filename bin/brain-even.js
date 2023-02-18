@@ -11,6 +11,10 @@ let i = 0
 let j = 7
 loop: while (i < 3) {
 const number = readlineSync.question(`Question: ${random} \nYour answer: `);
+if (number !== 'yes' && number !== 'no') {
+    console.log("Wrong answer ;(. Correct answer was 'yes'. \nLet's try again, " + userName + '!')
+    break 
+}
 if (random % 2 === 0 && number === 'yes') {
     console.log('Correct!')
     i = i + 1
