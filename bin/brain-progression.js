@@ -2,7 +2,7 @@
 
 import readlineSync from 'readline-sync';
 import getRandomInt from '../../frontend-project-44/src/random.js'
-import arifmetProg from '../../frontend-project-44/src/arifmetProg.js'
+
 
 
 
@@ -16,7 +16,7 @@ loop: while (k < 3) {
 var arrTest = []
 var randomStart = getRandomInt(2,10)
 var randomStep2 = getRandomInt(2,10)
-var randomPos = getRandomInt(1,9)
+var randomPos = getRandomInt(1,5)
 var randomNum = getRandomInt(2,80)
 var randomNums = getRandomInt(6,10)
 
