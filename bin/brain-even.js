@@ -11,7 +11,7 @@ console.log('Answer "yes" if the number is even, otherwise answer "no"')
 
 let i = 0
 loop: while (i < 3) {
-var random = getRandomInt(0,100)
+var random = getRandomInt(2,100)
 const number = readlineSync.question(`Question: ${random} \nYour answer: `);
 if (number !== 'yes' && number !== 'no') {
     console.log("Wrong answer ;(. Correct answer was 'yes'. \nLet's try again, " + userName + '!')
