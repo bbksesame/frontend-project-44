@@ -1,3 +1,5 @@
 #!/usr/bin/env node
-console.log(nameCheck('Hello, '))
-import nameCheck from '../../frontend-project-44/src/cli.js'
+import readlineSync from 'readline-sync';
+console.log('Welcome to the Brain Games!')
+const userName = readlineSync.question('May I have your name? ');
+console.log('Hello, ' + userName + '!')
