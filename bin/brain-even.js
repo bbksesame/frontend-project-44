@@ -18,7 +18,7 @@ loop: while (i < 3) {
 var random = getRandomInt(2,100)
 const number = readlineSync.question(`Question: ${random} \nYour answer: `);
 if (number !== 'yes' && number !== 'no') {
-    console.log(`'${number}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${userName}`)
+    console.log(`'${number}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${userName}!`)
     break 
 }
 if (random % 2 === 0 && number === 'yes') {
@@ -26,14 +26,14 @@ if (random % 2 === 0 && number === 'yes') {
     i = i + 1
     continue
 } if (random % 2 === 0 && number === 'no') {
-    console.log(`'${number}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${userName}`)
+    console.log(`'${number}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${userName}!`)
   break loop
 } if (random % 2 !== 0 && number === 'no') {
     console.log('Correct!')
     i = i + 1
     continue
 } if (random % 2 !== 0 && number === 'yes') {
-console.log(`'${number}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}`)
+console.log(`'${number}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`)
 break loop
 } 
 }
