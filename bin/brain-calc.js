@@ -1,12 +1,23 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import getRandomInt from '../../frontend-project-44/src/random.js'
-import rand from '../../frontend-project-44/src/randOper.js'
-import math_it_up from '../../frontend-project-44/src/math.js'
 
-var znaki = ['-', '+', '*']
-var znak = znaki[rand]
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+var znaki = ['-', '+', '*'];
+var rand = Math.floor(Math.random() * znaki.length);
+var znak = znaki[rand];
+
+const math_it_up = {
+    '+': function (x, y) { return x + y },
+    '-': function (x, y) { return x - y },
+    '*': function (x, y) { return x * y }
+}
+
 
 console.log('Welcome to the Brain Games!')
 const userName = readlineSync.question('May I have your name?: ');

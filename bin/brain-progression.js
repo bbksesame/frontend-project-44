@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import getRandomInt from '../../frontend-project-44/src/random.js'
 
-
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 
 console.log('Welcome to the Brain Games!')

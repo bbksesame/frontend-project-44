@@ -1,9 +1,28 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import getRandomInt from '../../frontend-project-44/src/random.js'
-import prime from '../../frontend-project-44/src/prime.js'
 
+const prime = (n) => {
+    if (n===1)  {
+      return 'false';
+    }
+    else if(n === 2)  {
+      return 'true';
+    } else   {
+      for(var x = 2; x < n; x++)  {
+        if(n % x === 0) {
+          return 'false';
+        }
+      }
+      return 'true';  
+    }
+  }
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 console.log('Welcome to the Brain Games!')
 const userName = readlineSync.question('May I have your name?: ');
