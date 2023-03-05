@@ -3,7 +3,8 @@
 coverage
 .DS_Store
 arifmetProg.js  
-cli.js  delitel.js  
+cli.js 
+delitel.js  
 math.js  
 prime.js  
 randOper.js  
