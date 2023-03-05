@@ -27,5 +27,8 @@
   "homepage": "https://github.com/bbksesame/frontend-project-44#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.35.0"
   }
 }
