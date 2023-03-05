@@ -3,19 +3,17 @@
 import readlineSync from 'readline-sync';
 
 function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 const del = (num1, num2) => {
   const arr1 = [];
   const arr2 = [];
-  for (let i = 0; i <= num1; i++) {
-    const fun1 = (num1 % i === 0) ? arr1.push(i) : i = i;
+  for (let i = 0; i <= num1; i += 1) {
+    const fun1 = (num1 % i === 0) ? arr1.push(i) : i += 0;
   }
-  for (let j = 0; j <= num2; j++) {
-    const fun2 = (num2 % j === 0) ? arr2.push(j) : j = j;
+  for (let j = 0; j <= num2; j += 1) {
+    const fun2 = (num2 % j === 0) ? arr2.push(j) : j += 0;
   }
 
   const result = arr1.filter((num) => arr2.includes(num));
@@ -34,9 +32,8 @@ while (i < 3) {
   const number = readlineSync.question(`Question: ${random1} ${random2} \nYour answer: `);
   if (+number === otv) {
     console.log('Correct!');
-    i++;
-    continue;
-  } if (+number !== otv) {
+    i += 1;
+  } else if (+number !== otv) {
     console.log(`'${number}' is wrong answer ;(. Correct answer was '${otv}'. \nLet's try again, ${userName}!`);
     break;
   }

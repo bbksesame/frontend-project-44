@@ -9,7 +9,7 @@ const prime = (n) => {
   if (n === 2) {
     return 'true';
   }
-  for (let x = 2; x < n; x++) {
+  for (let x = 2; x < n; x += 1) {
     if (n % x === 0) {
       return 'false';
     }
@@ -18,8 +18,6 @@ const prime = (n) => {
 };
 
 function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
@@ -35,19 +33,16 @@ while (i < 3) {
   if (number !== 'yes' && number !== 'no') {
     console.log(`Wrong answer ;(. Correct answer was 'yes'. \nLet's try again, ${userName}!`);
     break;
-  }
-  if (p !== 'false' && number === 'yes') {
+  } else if (p !== 'false' && number === 'yes') {
     console.log('Correct!');
-    i++;
-    continue;
-  } if (p !== 'false' && number === 'no') {
+    i += 1;
+  } else if (p !== 'false' && number === 'no') {
     console.log(`'no' is wrong answer ;(. Correct answer was 'yes'. \nLet's try again, ${userName}!`);
     break;
-  } if (p !== 'true' && number === 'no') {
+  } else if (p !== 'true' && number === 'no') {
     console.log('Correct!');
-    i++;
-    continue;
-  } if (p !== 'true' && number === 'yes') {
+    i += 1;
+  } else if (p !== 'true' && number === 'yes') {
     console.log(`'yes' is wrong answer ;(. Correct answer was 'no'. \nLet's try again, ${userName}!`);
     break;
   }
