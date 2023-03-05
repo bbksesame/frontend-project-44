@@ -31,6 +31,7 @@ var randomNums = getRandomInt(6,10)
         } 
        arrProg = arrTest.slice()
         arrProg[randomPos] = '..'
+        arrProg = arrProg.join(' ')
         return arrProg
       }
       var go = arifmetProg(randomNum, randomNums)
