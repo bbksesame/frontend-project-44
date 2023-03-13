@@ -10,9 +10,11 @@ const del = (num1, num2) => {
   const arr1 = [];
   const arr2 = [];
   for (let i = 0; i <= num1; i += 1) {
+    // eslint-disable-next-line no-unused-expressions
     (num1 % i === 0) ? arr1.push(i) : i += 0;
   }
   for (let j = 0; j <= num2; j += 1) {
+    // eslint-disable-next-line no-unused-expressions
     (num2 % j === 0) ? arr2.push(j) : j += 0;
   }
 
