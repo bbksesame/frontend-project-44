@@ -1,5 +1,5 @@
 {
-  "name": "@hexlet/code",
+  "name": "brain-games project",
   "version": "1.0.0",
   "type": "module",
   "description": "[![Actions Status](https://github.com/bbksesame/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/bbksesame/frontend-project-44/actions)",
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/bbksesame/frontend-project-44.git"
   },
-  "author": "",
+  "author": "bbksesame",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bbksesame/frontend-project-44/issues"
